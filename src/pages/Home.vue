@@ -1,8 +1,8 @@
 <template>
-   <main>
+   <main v-if="sections">
       <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
 
-      <Intro v-bind:section="sections.intro" />
+      <Intro v-bind:section="sections.intro"  /> 
    </main>
 </template>
 
@@ -15,14 +15,14 @@ export default {
    data() {
       return {
          title: "Home page",
-         sections: {},
+         sections: null, 
       };
    },
    components: {
       Intro,
    },
 
-   beforeCreate() {
+   created() {
       fetch("data/home-page.json")
          .then((result) => result.json())
          .then((data) => {
