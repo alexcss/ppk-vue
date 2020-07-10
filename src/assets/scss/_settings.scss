@@ -128,7 +128,7 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
+  small: 30px,
   medium: 30px,
 );
 $grid-column-align-edge: true;
@@ -517,13 +517,13 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 250px,
+  small: 320px,
 );
 $offcanvas-vertical-sizes: (
   small: 250px,
 );
-$offcanvas-background: $light-gray;
-$offcanvas-shadow: 0 0 10px rgba($black, 0.7);
+$offcanvas-background: $black;
+$offcanvas-shadow: 0 0 10px rgba($black, 0.9);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);
 $offcanvas-overlay-zindex: 11;

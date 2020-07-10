@@ -12,13 +12,26 @@
          </li>
       </ul>
 
-      <button class="menu-icon hide-for-medium"></button>
+      <button class="menu-icon hide-for-medium" v-on:click="toggleMenu"></button>
    </nav>
 </template>
 
 <script>
+import { eventBus } from '@/main.js';
+
 export default {
    name: "Nav",
+   data() {
+      return {
+         isMenuOpen: true,
+      };
+   },
+   methods:{
+      toggleMenu(){      
+          
+         eventBus.$emit('toggleMenu');
+      }
+   }
 };
 </script>
 
@@ -28,7 +41,7 @@ export default {
       width: 33px;
       height: 22px;
 
-      &:after{
+      &:after {
          height: 3px;
       }
    }

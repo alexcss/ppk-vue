@@ -3,12 +3,16 @@
       <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
 
       <Intro v-bind:section="sections.intro"  /> 
+      <ABout v-bind:section="sections.about"  />  
+      <Specs v-bind:section="sections.specs"  />  
    </main>
 </template>
 
 <script>
 // @ is an alias to /src
 import Intro from "@/components/home/Intro.vue";
+import ABout from "@/components/home/ABout.vue";
+import Specs from "@/components/home/Specs.vue";
 
 export default {
    name: "Home",
@@ -19,7 +23,7 @@ export default {
       };
    },
    components: {
-      Intro,
+      Intro, ABout, Specs
    },
 
    created() {
