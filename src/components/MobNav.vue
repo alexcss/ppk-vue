@@ -12,14 +12,8 @@
       <p class="ba-nav-mob__title">{{ title }}</p>
 
       <ul class="menu vertical">
-         <li>
-            <router-link to="/">Головна</router-link>
-         </li>
-         <li>
-            <router-link to="/vykladachi">Викладачі</router-link>
-         </li>
-         <li>
-            <router-link to="/spetcіalіzatsii">Спеціалізаціі</router-link>
+         <li v-for="(link, i) in routes" :key="i">
+            <router-link :to="link.path">{{ link.name }}</router-link>
          </li>
       </ul>
    </nav>
@@ -27,18 +21,21 @@
 
 <script>
 import { eventBus } from "@/main.js";
+import { routes } from "@/router/index.js";
 
 export default {
    data() {
       return {
+         routes: routes,
+
          title: "Меню",
       };
    },
-   methods:{
-      toggleMenu(){       
-         eventBus.$emit('toggleMenu');
-      }
-   }
+   methods: {
+      toggleMenu() {
+         eventBus.$emit("toggleMenu");
+      },
+   },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-   <main v-if="sections">
+   <main v-if="sections" id="main">
       <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
 
       <Intro v-bind:section="sections.intro"  /> 

@@ -11,7 +11,8 @@ export const routes = [
    {
       path: '/',
       name: 'Головна',
-      component: Home
+      component: Home,
+      alias: '/'
    },
    {
       path: '/vykladachi',
@@ -21,6 +22,11 @@ export const routes = [
    {
       path: '/spetcіalіzatsii',
       name: 'Всі спеціалізації',
+      component: Specs
+   },
+   {
+      path: '/abot',
+      name: 'Про нас',
       component: Specs
    },
 ]
