@@ -24,19 +24,19 @@
       "title": "Наша історія",
       "list": [
          {
-            "img": "assets/img/home-page/2001.jpg",
+            "img": "/img/home-page/2001.jpg",
             "year": "2001",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
          },
          {
-            "img": "assets/img/home-page/2001.jpg",
+            "img": "/img/home-page/2001.jpg",
             "year": "2008",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
          },
          {
-            "img": "assets/img/home-page/2001.jpg",
+            "img": "/img/home-page/2001.jpg",
             "year": "2016",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
@@ -44,7 +44,15 @@
       ]
    },
    "gallery": {
-      "title": "Галерея"
+      "title": "Галерея",
+      "gallery" : [
+         "/img/home-page/2001.jpg",
+         "/img/home-page/2001.jpg",
+         "/img/home-page/2001.jpg",
+         "/img/home-page/intro.jpg",
+         "/img/home-page/2001.jpg"
+         
+      ]
    },
    "partners": {
       "title": "Партнери ППК"

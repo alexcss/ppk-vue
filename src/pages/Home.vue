@@ -5,6 +5,7 @@
       <Intro v-bind:section="sections.intro"  /> 
       <ABout v-bind:section="sections.about"  />  
       <Specs v-bind:section="sections.specs"  />  
+      <Gallery v-bind:section="sections.gallery"  />  
    </main>
 </template>
 
@@ -13,6 +14,7 @@
 import Intro from "@/components/home/Intro.vue";
 import ABout from "@/components/home/ABout.vue";
 import Specs from "@/components/home/Specs.vue";
+import Gallery from "@/components/home/Gallery.vue";
 
 export default {
    name: "Home",
@@ -23,7 +25,7 @@ export default {
       };
    },
    components: {
-      Intro, ABout, Specs
+      Intro, ABout, Specs, Gallery
    },
 
    created() {
