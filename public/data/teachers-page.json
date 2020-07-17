@@ -1,0 +1,16 @@
+{
+   "intro": {
+      "title": "Викладачі",
+      "img": "./img/home-page/about.jpg"
+   },
+   "specs": {
+      "title": "Спеціальності",
+      "btn": {
+         "text": "Всі спеціальності",
+         "url": "/spetcіalіzatsii"
+      }
+   },
+   "process": {
+      "title": "Процес навчання"
+   }
+}

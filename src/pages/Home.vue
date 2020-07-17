@@ -4,7 +4,7 @@
 
       <Intro v-bind:section="sections.intro"  /> 
       <ABout v-bind:section="sections.about"  />  
-      <Specs v-bind:section="sections.specs"  />  
+      <Specs :type="'dark'" v-bind:section="sections.specs"  />  
       <Gallery v-bind:section="sections.gallery"  />  
    </main>
 </template>

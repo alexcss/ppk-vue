@@ -1,14 +1,35 @@
 <template>
-   <div>
-      <h1>Всі спеціалізації</h1>
-      
-   </div>
+   <main v-if="sections" id="main">
+      <Intro :type="'center'" :section="sections.intro" />
+      <Specs v-bind:section="sections.specs" />
+      <Process v-bind:section="sections.process" />
+   </main>
 </template>
 
 <script>
-export default {};
+// @ is an alias to /src
+import Intro from "@/components/home/Intro.vue";
+import Specs from "@/components/home/Specs.vue";
+import Process from "@/components/specs/Process.vue";
+
+export default {
+   data() {
+      return {
+         sections: null,
+      };
+   },
+   components: {
+      Intro,
+      Specs,
+      Process
+   },
+
+   created() {
+      fetch("data/specs-page.json")
+         .then((result) => result.json())
+         .then((data) => {
+            this.sections = data;
+         });
+   },
+};
 </script>
-
-<style lang="scss" scoped>
-
-</style>

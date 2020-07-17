@@ -1,5 +1,29 @@
 <template>
-  <div class="about">
-    <h1>Викладачі</h1>
-  </div>
+   <main v-if="sections" id="main">
+      <Intro :type="'center'" :section="sections.intro"  /> 
+   </main>
 </template>
+
+<script>
+// @ is an alias to /src
+import Intro from "@/components/home/Intro.vue";
+
+export default {
+   data() {
+      return {
+         sections: null, 
+      };
+   },
+   components: {
+      Intro
+   },
+
+   created() {
+      fetch("data/teachers-page.json")
+         .then((result) => result.json())
+         .then((data) => {
+            this.sections = data;
+         });
+   },
+};
+</script>
