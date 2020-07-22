@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
 import Specs from '../pages/Specs.vue'
 import Teachers from '../pages/Teachers.vue'
+// import Blog from '../pages/Blog.vue'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,11 @@ export const routes = [
       name: 'Головна',
       component: Home,
       alias: '/'
+   },
+   {
+      path: '/blog',
+      name: 'Блог і новини',
+      component: () => import('../pages/Blog.vue')
    },
    {
       path: '/vykladachi',

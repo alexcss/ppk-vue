@@ -1,5 +1,5 @@
 <template>
-   <section class="ba-section">
+   <section class="ba-section padding-bottom-0">
 
       <div class="row column ba-container">
          <h2 class="ba-section-title">{{ section.title }}</h2>
@@ -50,6 +50,10 @@ export default {
    color: $black;
    fill: #fff;
 
+   img{
+      display: block;
+      width: 100%;
+   }
    &:hover {
       color: #fff;
       fill: $primary-color;
