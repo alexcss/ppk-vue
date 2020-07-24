@@ -1,0 +1,18 @@
+{
+   "intro": {
+      "title": "Всі спеціалізації",
+      "img": "./img/home-page/intro.jpg",
+      "content": "більше 20 тисяч висококваліфікованих фахівців для різних галузей господарства України"
+   },
+   "specs": {
+      "title": "Спеціальності",
+      "btn": {
+         "text": "Всі спеціальності",
+         "url": "/spetcіalіzatsii"
+      }
+   },
+   "process": {
+      "title": "Процес навчання",
+      "video_url" : "https://www.youtube.com/watch?v=ZCOBOaTaW88"
+   }
+}

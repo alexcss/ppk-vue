@@ -1,0 +1,60 @@
+{
+   "intro": {
+      "title": "Полтавський політехнічний коледж",
+      "content": "більше 20 тисяч висококваліфікованих фахівців для різних галузей господарства України",
+      "img": "./img/home-page/intro.jpg",
+      "btn": {
+         "text": "Подати заявку",
+         "url": "#zayav"
+      }
+   },
+   "about": {
+      "title": "Про нас",
+      "content": "більше 20 тисяч висококваліфікованих фахівців для різних галузей господарства України \n Багато з них продовжують навчання у НТУ «ХПІ», НАУ \"ХАІ\", ХНУРЕ та інших вищих навчальних закладах ІІІ-ІV рівнів акредитації, очолюють підприємства Полтавщини, працюють начальниками цехів, електростанцій та підстанцій, майстрами, техніками-технологами, програмістами, електриками,  чесно виконуючи свій професійний обов`язок, примножуючи авторитет рідної alma mater.",
+      "img": "./img/home-page/about.jpg"
+   },
+   "specs": {
+      "title": "Спеціальності",
+      "btn": {
+         "text": "Всі спеціальності",
+         "url": "/spetcіalіzatsii"
+      }
+   },
+   "history": {
+      "title": "Наша історія",
+      "list": [
+         {
+            "img": "./img/home-page/2001.jpg",
+            "year": "2001",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
+            "city": "Полтава"
+         },
+         {
+            "img": "./img/home-page/2001.jpg",
+            "year": "2008",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
+            "city": "Полтава"
+         },
+         {
+            "img": "./img/home-page/2001.jpg",
+            "year": "2016",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
+            "city": "Полтава"
+         }
+      ]
+   },
+   "gallery": {
+      "title": "Галерея",
+      "gallery" : [
+         "./img/home-page/2001.jpg",
+         "./img/home-page/2001.jpg",
+         "./img/home-page/2001.jpg",
+         "./img/home-page/intro.jpg",
+         "./img/home-page/2001.jpg"
+         
+      ]
+   },
+   "partners": {
+      "title": "Партнери ППК"
+   }
+}
