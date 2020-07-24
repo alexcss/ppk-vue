@@ -34,13 +34,22 @@ export const routes = [
       path: '/abot',
       name: 'Про нас',
       component: Specs
-   },
+   }   
+]
+
+const dynamicRoutes = [
+   {
+      path: '/blog/:slug',
+      name: 'Стаття',
+      component: () => import('../pages/SinglePost.vue'),
+      props: true
+   }
 ]
 
 const router = new VueRouter({
-   mode: 'history',
+   mode: 'hash',
    base: process.env.BASE_URL,
-   routes
+   routes: [...routes, ...dynamicRoutes]
 })
 
 export default router

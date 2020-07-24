@@ -1,28 +1,24 @@
 <template>
    <nav class="ba-nav">
-      <ul class="menu show-for-medium">
-         <li>
-            <router-link to="/">Головна</router-link>
-         </li>
-         <li>
-            <router-link to="/vykladachi">Викладачі</router-link>
-         </li>
-         <li>
-            <router-link to="/spetcіalіzatsii">Спеціалізаціі</router-link>
+      <ul class="menu show-for-large">
+         <li v-for="(link, i) in routes" :key="i">
+            <router-link :to="link.path">{{ link.name }}</router-link>
          </li>
       </ul>
 
-      <button class="menu-icon hide-for-medium" v-on:click="toggleMenu"></button>
+      <button class="menu-icon hide-for-large" v-on:click="toggleMenu"></button>
    </nav>
 </template>
 
 <script>
 import { eventBus } from '@/main.js';
+import { routes } from "@/router/index.js";
 
 export default {
    name: "Nav",
    data() {
       return {
+         routes: routes,
          isMenuOpen: true,
       };
    },

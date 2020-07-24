@@ -10,27 +10,33 @@
 import Intro from "@/components/home/Intro.vue";
 import Posts from "@/components/home/Posts.vue";
 
-
 export default {
    data() {
       return {
          sections: {
-            intro :{
+            intro: {
                title: "Блог і новини",
-               img : "./img/home-page/intro.jpg",
+               img: "./img/home-page/intro.jpg",
             },
-            posts : {
+            posts: {
                title: "Блоги викладачів",
-            }
+            },
          },
       };
    },
    components: {
-      Intro, Posts
+      Intro,
+      Posts,
    },
 
-   created() {
-
-   },
+   created() {},
+   metaInfo () {
+      return    {
+         title: this.sections.intro.title,
+         meta: [
+            { name: "description", content: "Вітаємо переможців Всеукраїнського чемпіонату з інформаційних технологій" }
+         ],
+      }
+   }
 };
 </script>

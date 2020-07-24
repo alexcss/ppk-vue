@@ -2,10 +2,10 @@
    <main v-if="sections" id="main">
       <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
 
-      <Intro v-bind:section="sections.intro"  /> 
-      <ABout v-bind:section="sections.about"  />  
-      <Specs :type="'dark'" v-bind:section="sections.specs"  />  
-      <Gallery v-bind:section="sections.gallery"  />  
+      <Intro v-bind:section="sections.intro" />
+      <ABout v-bind:section="sections.about" />
+      <Specs :type="'dark'" v-bind:section="sections.specs" />
+      <Gallery v-bind:section="sections.gallery" />
    </main>
 </template>
 
@@ -21,11 +21,14 @@ export default {
    data() {
       return {
          title: "Home page",
-         sections: null, 
+         sections: null,
       };
    },
    components: {
-      Intro, ABout, Specs, Gallery
+      Intro,
+      ABout,
+      Specs,
+      Gallery,
    },
 
    created() {
@@ -37,5 +40,10 @@ export default {
             this.sections = data;
          });
    },
+   metaInfo: {
+      title : 'Головна',
+      meta: [{ name: "description", content: "Більше 20 тисяч висококваліфікованих фахівців для різних галузей господарства України" }],
+   },
+   
 };
 </script>

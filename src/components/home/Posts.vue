@@ -8,14 +8,14 @@
       <div class="row" v-if="posts.length > 0">
          <div class="column small-12 medium-6 large-6" v-for="(post, index) in posts" :key="index">
             <article class="ba-post">
-               <a :href="post.link" class="ba-post__img-link" target="_blank" >
+               <router-link :to="`/blog/${post.slug}`" class="ba-post__img-link" >
                   <img 
                      :src="post._embedded['wp:featuredmedia'][0].source_url" 
                      v-if="post._embedded['wp:featuredmedia']"
                      :alt="post.title.rendered"
                   />
-                  <img v-else src="/img/home-page/intro.jpg" :alt="post.title.rendered">
-               </a> 
+                  <img v-else :src="'./img/home-page/intro.jpg'" :alt="post.title.rendered">
+               </router-link> 
 
                <div class="ba-post__body">
                   <h3 class="ba-post__title">

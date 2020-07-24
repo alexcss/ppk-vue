@@ -25,5 +25,9 @@ export default {
             this.sections = data;
          });
    },
+   metaInfo: {
+      title: "Викладачі",
+      meta: [{ name: "description", content: "Вітаємо переможців Всеукраїнського чемпіонату з інформаційних технологій" }],
+   },
 };
 </script>

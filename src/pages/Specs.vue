@@ -21,7 +21,7 @@ export default {
    components: {
       Intro,
       Specs,
-      Process
+      Process,
    },
 
    created() {
@@ -30,6 +30,10 @@ export default {
          .then((data) => {
             this.sections = data;
          });
+   },
+   metaInfo: {
+      title: "Всі спеціалізації",
+      meta: [{ name: "description", content: "Вітаємо переможців Всеукраїнського чемпіонату з інформаційних технологій" }],
    },
 };
 </script>

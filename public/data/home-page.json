@@ -24,19 +24,19 @@
       "title": "Наша історія",
       "list": [
          {
-            "img": "/img/home-page/2001.jpg",
+            "img": "./img/home-page/2001.jpg",
             "year": "2001",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
          },
          {
-            "img": "/img/home-page/2001.jpg",
+            "img": "./img/home-page/2001.jpg",
             "year": "2008",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
          },
          {
-            "img": "/img/home-page/2001.jpg",
+            "img": "./img/home-page/2001.jpg",
             "year": "2016",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
             "city": "Полтава"
@@ -46,11 +46,11 @@
    "gallery": {
       "title": "Галерея",
       "gallery" : [
-         "/img/home-page/2001.jpg",
-         "/img/home-page/2001.jpg",
-         "/img/home-page/2001.jpg",
-         "/img/home-page/intro.jpg",
-         "/img/home-page/2001.jpg"
+         "./img/home-page/2001.jpg",
+         "./img/home-page/2001.jpg",
+         "./img/home-page/2001.jpg",
+         "./img/home-page/intro.jpg",
+         "./img/home-page/2001.jpg"
          
       ]
    },

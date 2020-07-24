@@ -36,6 +36,10 @@ export default {
          this.isMenuOpen = !this.isMenuOpen;
       });
    },
+   metaInfo: {
+      title: 'Вітаємо!',
+      titleTemplate : '%s | Полтавський політехнічний коледж'
+   },
 };
 </script>
 

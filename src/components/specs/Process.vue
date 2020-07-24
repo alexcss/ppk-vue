@@ -11,7 +11,7 @@
             <path d="M52.6667 44.6667V77.3334L78.3334 61.0001L52.6667 44.6667Z" fill="currentColor" />
          </svg>
 
-         <img src="/img/process.jpg" :alt="section.title" />
+         <img :src="videoImg" :alt="section.title" />
       </a>
    </section>
 </template>
@@ -26,7 +26,9 @@ export default {
       },
    },
    data() {
-      return {};
+      return {
+         videoImg : "./img/process.jpg"
+      };
    },
    components: {},
    methods: {},
